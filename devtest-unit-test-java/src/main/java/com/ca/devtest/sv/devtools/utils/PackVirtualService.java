@@ -35,7 +35,8 @@ public class PackVirtualService {
 
 		String tmpDir = System.getProperty("java.io.tmpdir");
 		// A optimiser pour creation de fichier temp
-		File virtualServiceArchive = new File(new StrBuilder(tmpDir).append("/virtualServiceArchive.zip").toString());
+		
+		File virtualServiceArchive = File.createTempFile("virtualServiceArchive", ".zip");//new File(new StrBuilder(tmpDir).append("/virtualServiceArchive.zip").toString());
 		ZipOutputStream out = null;
 		try {
 			out = new ZipOutputStream(new FileOutputStream(virtualServiceArchive));

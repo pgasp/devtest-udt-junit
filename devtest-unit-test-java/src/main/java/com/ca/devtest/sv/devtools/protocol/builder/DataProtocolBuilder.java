@@ -16,7 +16,7 @@ public class DataProtocolBuilder extends ProtocolBuilder<DataProtocolDefinition>
 	}
 	
 	public  DataProtocolBuilder addParameter(String key, String value) {
-		parameters.put(key, value);
+		addKeyValue(key, value);
 
 	return this;
 }

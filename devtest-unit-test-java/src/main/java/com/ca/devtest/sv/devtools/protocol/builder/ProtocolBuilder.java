@@ -22,7 +22,10 @@ public abstract class ProtocolBuilder<T extends BaseProtocol> {
 	}
 
 	
-	
+	 public  void  addKeyValue(String key, String value) {
+		parameters.put(key, value);
+		
+	}
 
 	
 	/**

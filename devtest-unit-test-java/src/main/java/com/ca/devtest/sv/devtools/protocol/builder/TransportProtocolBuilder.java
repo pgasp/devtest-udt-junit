@@ -26,7 +26,7 @@ public class TransportProtocolBuilder extends ProtocolBuilder<TransportProtocolD
 	
 
 	public TransportProtocolBuilder addParameter(String key, String value) {
-		parameters.put(key, value);
+		addKeyValue(key, value);
 
 		return this;
 	}

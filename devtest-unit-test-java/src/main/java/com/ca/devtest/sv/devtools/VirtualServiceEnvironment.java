@@ -77,6 +77,7 @@ public class VirtualServiceEnvironment {
 				throw new HttpResponseException(response.getStatusLine().getStatusCode(),
 						"VS creation did not complete normally");
 			}
+			service.getPackedVirtualService().delete();
 	}
 	
 	/**
