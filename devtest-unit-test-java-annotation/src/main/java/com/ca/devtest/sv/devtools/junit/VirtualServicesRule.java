@@ -20,7 +20,6 @@ import org.junit.runners.model.Statement;
 import com.ca.devtest.sv.devtools.DevTestClient;
 import com.ca.devtest.sv.devtools.annotation.DevTestVirtualServer;
 import com.ca.devtest.sv.devtools.annotation.DevTestVirtualService;
-import com.ca.devtest.sv.devtools.annotation.DevTestVirtualServices;
 import com.ca.devtest.sv.devtools.annotation.Parameter;
 import com.ca.devtest.sv.devtools.annotation.Protocol;
 import com.ca.devtest.sv.devtools.protocol.builder.DataProtocolBuilder;
