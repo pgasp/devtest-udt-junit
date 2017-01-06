@@ -206,7 +206,7 @@ public class VirtualServicesRule implements TestRule {
 	 * @param builder
 	 * @param parameters
 	 */
-	private void addParamesToBuilder(ProtocolBuilder<?> builder, Parameter[] parameters) {
+	private void addParamesToBuilder(ProtocolBuilder builder, Parameter[] parameters) {
 
 		for (Parameter parameter : parameters) {
 			builder.addKeyValue(parameter.name(), parameter.value());
