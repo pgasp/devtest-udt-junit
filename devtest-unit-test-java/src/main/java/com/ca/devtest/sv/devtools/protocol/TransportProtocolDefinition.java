@@ -15,7 +15,7 @@ public final class TransportProtocolDefinition extends BaseProtocol {
 	private boolean allAreStateless=true;
 	private boolean asObject=true;
 	private boolean desensitize=false;
-	private boolean duptxns=false;
+	private boolean duptxns=true;
 	
 	private List<DataProtocolDefinition> requestSide= new ArrayList<DataProtocolDefinition>();
 	private List<DataProtocolDefinition> responseSide= new ArrayList<DataProtocolDefinition>();
