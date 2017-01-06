@@ -29,7 +29,10 @@ public class DevTesClientRRPairs {
 	 * @throws IOException
 	 * @throws URISyntaxException
 	 */
-
+	
+	
+	
+	
 	@DevTestVirtualService(serviceName = "lisa", port = 9001, basePath = "/lisa", rrpairsFolder = "rrpairs/soap", requestDataProtocol = {
 			@Protocol(ProtocolType.DPH_SOAP) })
 	@DevTestVirtualService(serviceName = "lisa2", port = 9001, basePath = "/lisa", rrpairsFolder = "rrpairs/soap", requestDataProtocol = {
