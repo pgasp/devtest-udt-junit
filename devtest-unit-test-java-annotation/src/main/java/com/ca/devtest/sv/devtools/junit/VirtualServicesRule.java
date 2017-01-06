@@ -36,6 +36,10 @@ public class VirtualServicesRule implements TestRule {
 
 	private static final Log LOGGER = LogFactory.getLog(VirtualServicesRule.class);
 
+	
+	public  VirtualServicesRule() {
+		System.out.println("VirtualServicesRule............");
+	}
 	/*
 	 * (non-Javadoc)
 	 * 
