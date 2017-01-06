@@ -51,7 +51,7 @@ public class VirtualServicesRule implements TestRule {
 
 			@Override
 			public void evaluate() throws Throwable {
-
+				System.out.println("evaluate............");
 				if (!clazzNeedVirtualServices(description.getTestClass())) {
 					LOGGER.info(description.getTestClass() + "is not annoted by DevTestVirtualServer");
 					base.evaluate();
