@@ -62,7 +62,9 @@ public class VirtualServiceEnvironment {
 	public void deployService( VirtualService service) throws IOException {
 		
 		HttpClient httpClient = HttpClients.createDefault();
-		HttpPost post = new HttpPost(String.format(CREATE_VS_URI, getRegistryHostName(), getName()));
+		String urlPost=String.format(CREATE_VS_URI, getRegistryHostName(), getName());
+		System.out.println("");
+		HttpPost post = new HttpPost(urlPost);
 		MultipartEntityBuilder builder = MultipartEntityBuilder.create();
 		FileBody contentBody = new FileBody(service.getPackedVirtualService(), ContentType.APPLICATION_JSON);
 		builder.addPart("file", contentBody);

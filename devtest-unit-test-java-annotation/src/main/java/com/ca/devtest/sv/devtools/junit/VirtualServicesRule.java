@@ -63,7 +63,7 @@ public class VirtualServicesRule implements TestRule {
 						deployVirtualServices(virtualServices);
 						base.evaluate();
 					} finally {
-
+						Thread.sleep(1000);
 						unDeployVirtualServices(virtualServices);
 					}
 
