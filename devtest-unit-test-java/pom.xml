@@ -45,11 +45,7 @@ This API will cover same scope as WirMock or MokServer</description>
 			<artifactId>velocity</artifactId>
 			<version>1.7</version>
 		</dependency>
-		<dependency>
-			<groupId>org.cfg4j</groupId>
-			<artifactId>cfg4j-core</artifactId>
-			<version>4.4.0</version>
-		</dependency>
+		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
