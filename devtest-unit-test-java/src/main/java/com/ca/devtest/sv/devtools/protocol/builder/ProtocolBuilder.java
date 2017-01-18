@@ -33,9 +33,9 @@ public abstract class ProtocolBuilder<T extends BaseProtocol> {
 	 */
 	public T  build(){
 		
-		T  baseProtocol = doBuild();
-		baseProtocol.getParameters().putAll(parameters);
-		return baseProtocol;
+		Object  baseProtocol = doBuild();
+		((T)baseProtocol).getParameters().putAll(parameters);
+		return (T)baseProtocol;
 	}
 
 

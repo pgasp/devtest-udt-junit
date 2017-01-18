@@ -25,8 +25,7 @@ public class DevTesClientRRPairs {
 		try {
 			URL url = getClass().getClassLoader().getResource("rrpairs/doit");
 			File rrPairsFolder = new File(url.toURI());
-			VirtualService service = devTestClient.fromRRPairs("DoItSample", rrPairsFolder)
-					.overHttp(9001, "/cgi-bin/GatewayJavaDoIt.cgi")
+			VirtualService service = devTestClient.fromRRPairs("DoItSample", rrPairsFolder).overHttp(9001, "/cgi-bin/GatewayJavaDoIt.cgi")
 					.addRequestDataProtocol(new DataProtocolBuilder(DataProtocolType.DOIT.getType()).build())
 					.addRespondDataProtocol(new DataProtocolBuilder(DataProtocolType.DOIT.getType()).build()).build();
 			service.deploy();

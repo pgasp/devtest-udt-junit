@@ -18,6 +18,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClients;
+import org.junit.Test;
 
 /**
  * @author gaspa03
@@ -37,6 +38,7 @@ public class DoItClient {
 		this.server=server;
 		this.port=port;
 	}
+	@Test
 	public String callDoItService() throws  IOException {
 		HttpClient client = HttpClients.createDefault();
 		HttpPost post = new HttpPost(String.format(DOIT_SERVICE, server, port));
